@@ -1,0 +1,17 @@
+.footer{
+    width: 100%;
+    height: 85px;
+    background-color: black;
+    padding: 66px 30% 29px 30%;
+
+    .logo-footer{
+        color:white;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+            height: 114px;
+            padding-bottom:58px;
+        }
+}
