@@ -4,10 +4,15 @@
 $font-1: "Montserrat", sans-serif; 
 $font-2: "Montserrat", sans-serif; 
 
+$color-1: #FF6060;
+$color-2: #000000;
+$white: white;
+
 body {
     padding: 20px;
     width: 100vw;
     font-family: $font-1;
+    color:$color-1;
     font-weight: 500;
     font-size: 0.8rem; 
 }
@@ -21,9 +26,6 @@ p {
     width: 100%;
 }
 
-$color-1: #FF6060;
-$color-2: #000000;
-$white: white;
 
 @mixin verticalCenter {
     display: flex;

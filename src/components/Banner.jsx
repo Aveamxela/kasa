@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Banner = (props) => {
-    console.log(props)
+    const test = props.image
+    console.log(test)
     return (
         <div className='banner'
         style ={{backgroundImage : `url('${props.image}')` }}

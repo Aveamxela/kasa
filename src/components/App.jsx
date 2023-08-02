@@ -10,7 +10,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/product" element={<Product />} />
+                <Route path="/product/:id" element={<Product />} />
                 {/* path="*" fonctionne si jamais l'url ne correspond à rien de déclaré au dessus(pour error 404 par exemple) */}
                 <Route path="*" element={<Home />} />
             </Routes>

@@ -1,0 +1,23 @@
+#carousel{
+    height: 255px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 15px;
+    .img-carousel{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .previous-arrow, .next-arrow{
+        position:absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .previous-arrow{
+        left: 12px;
+    }
+    .next-arrow{
+        right: -12px;
+    }
+}
