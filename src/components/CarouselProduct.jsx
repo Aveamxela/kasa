@@ -29,14 +29,26 @@ const CarouselProduct = (props) => {
 
      };
 
-     
+    const multipleImage = props.images.length > 1;
 
     return (
         <div id="carousel">
             <img className="img-carousel" src={props.images[index]} />
-            <img onClick={previous} src={previousImage} className="previous-arrow" />
-            <img onClick={next} src={nextImage} className="next-arrow" />
-        </div>
+            {multipleImage && (
+                <div >
+                <div className="numerotation">
+                    {index + 1}/{props.images.length}
+                </div>
+                <img
+                    onClick={previous}
+                    src={previousImage}
+                    className="previous-arrow"
+                />
+                <img onClick={next} src={nextImage} className="next-arrow" />
+                </div>
+            )}
+                
+            </div>
     );
 };
 

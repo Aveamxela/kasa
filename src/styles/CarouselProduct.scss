@@ -3,12 +3,24 @@
     border-radius: 10px;
     position: relative;
     margin-bottom: 15px;
+    .remove{
+        display: none;
+    }
     .img-carousel{
         height: 100%;
         width: 100%;
         border-radius: 10px;
         object-fit: cover;
     }
+        .numerotation {
+            visibility: hidden;
+            position: absolute;
+            color: white;
+            font-size: 18px;
+            bottom:24px;
+            right: 50%;
+            transform: translate(50%, 50%);
+        }
     .previous-arrow, .next-arrow{
         position:absolute;
         top: 50%;
@@ -21,3 +33,19 @@
         right: -12px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+#carousel {
+    height: 415px;
+    .numerotation {
+            visibility: visible;
+    }
+    .previous-arrow,.next-arrow {
+           width: 48px;
+    }
+    
+    .previous-arrow {
+            left: 37px;
+    }
+
+}}
