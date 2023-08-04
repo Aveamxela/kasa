@@ -1,0 +1,18 @@
+.title-product {
+    font-size: 18px;
+}
+.location{
+    font-size:14px;
+}
+.host{
+    display: flex;
+    
+    .name-host {
+            font-size: 12px;
+        }
+    
+        .img-host {
+            border-radius: 50%;
+            width: 32px;
+        }
+}

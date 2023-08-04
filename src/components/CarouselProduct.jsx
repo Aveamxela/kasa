@@ -33,7 +33,7 @@ const CarouselProduct = (props) => {
 
     return (
         <div id="carousel">
-            <img className="img-carousel" src={props.images[index]} />
+            <img className="img-carousel" src={props.images[index]} alt="" />
             {multipleImage && (
                 <div >
                 <div className="numerotation">
@@ -43,8 +43,8 @@ const CarouselProduct = (props) => {
                     onClick={previous}
                     src={previousImage}
                     className="previous-arrow"
-                />
-                <img onClick={next} src={nextImage} className="next-arrow" />
+                alt=""/>
+                <img onClick={next} src={nextImage} className="next-arrow" alt="" />
                 </div>
             )}
                 
