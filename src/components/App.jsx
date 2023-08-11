@@ -1,8 +1,8 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "../pages/About";
 import Home from "../pages/Home";
 import Product from "../pages/Product";
-import "../styles/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Error from "../pages/Error";
 
 function App() {
     return (
@@ -11,8 +11,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/product/:id" element={<Product />} />
-                {/* path="*" fonctionne si jamais l'url ne correspond à rien de déclaré au dessus(pour error 404 par exemple) */}
-                <Route path="*" element={<Home />} />
+                {/* path="*" fonctionne si jamais l'url ne correspond à rien de déclaré au dessus */}
+                <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
     );

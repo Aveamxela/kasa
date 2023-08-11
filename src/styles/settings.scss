@@ -25,14 +25,6 @@ p {
 #root{
     width: 100%;
 }
-
-
-@mixin verticalCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -42,7 +34,6 @@ p {
 body {
     background: $white;
     font-family: $font-1;
-    @include verticalCenter;
 }
 
 li {

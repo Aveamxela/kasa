@@ -1,18 +1,88 @@
 .title-product {
     font-size: 18px;
+    margin-bottom: 5px;
 }
-.location{
-    font-size:14px;
+.location {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
-.host{
-    display: flex;
-    
-    .name-host {
+.rating-host {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    .host {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        .name-host {
             font-size: 12px;
+            margin-right: 10px;
         }
-    
+
         .img-host {
             border-radius: 50%;
             width: 32px;
         }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .product-sheet {
+        display: grid;
+        grid-template-columns: 70% 30%;
+
+        .title-product {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .location {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .tags {
+            margin-bottom: 4px;
+        }
+        .rating-host {
+            display: contents;
+            .ratings {
+                justify-content: flex-end;
+                margin-bottom: 4px;
+                .rating {
+                    width: 27px;
+                    height: 27px;
+                }
+            }
+
+            .host {
+                grid-area: 1/2/3/3;
+                justify-content: flex-end;
+
+                .name-host {
+                    font-size: 18px;
+                }
+                .img-host {
+                    width: 64px;
+                }
+            }
+        }
+        .describe-equipment {
+            grid-area: 4/1/5/3;
+            display: flex;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .product-sheet {
+        .rating-host {
+            .ratings {
+                .rating {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+    }
 }

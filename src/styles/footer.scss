@@ -1,17 +1,15 @@
-footer{
+footer {
     background-color: black;
     margin: 27px -20px -20px -20px;
     padding: 66px 30% 58px 30%;
-    gap:20px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-// pas centrer     
-    .logo-footer{
+    .logo-footer {
         width: 122px;
     }
-    .footer-text{
+    .footer-text {
         color: white;
         text-align: center;
     }
@@ -19,14 +17,13 @@ footer{
 
 @media only screen and (min-width: 768px) {
     footer {
-        gap:28px;
-        padding-bottom:29px;
+        gap: 28px;
+        padding-bottom: 29px;
 
-        .footer-text{
+        .footer-text {
             font-size: 1.5;
         }
-        }
-    
+    }
 }
 
 @media only screen and (min-width: 1024px) {

@@ -9,6 +9,7 @@ const Navigation = () => {
             <ul>
                 <NavLink
                     to="/"
+                    //Classe CSS appliquée lorsque le lien est actif
                     className={(nav) => (nav.isActive ? "nav-active" : "")}
                 >
                     <li>Accueil</li>
@@ -17,7 +18,7 @@ const Navigation = () => {
                     to="/about"
                     className={(nav) => (nav.isActive ? "nav-active" : "")}
                 >
-                    <li>A propos</li>
+                    <li>À propos</li>
                 </NavLink>
             </ul>
         </div>

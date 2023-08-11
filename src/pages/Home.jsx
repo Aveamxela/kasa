@@ -9,13 +9,14 @@ const Home = () => {
     return (
         <div>
             <Navigation />
-            <Banner image={imageMer} title={"Chez vous, partout et ailleurs"} />
+            <Banner
+                image={imageMer}
+                title={'Chez vous,\npartout et ailleurs'}
+            />
             <Locations />
-            <Footer/>
+            <Footer />
         </div>
     );
 };
 
 export default Home;
-
-// faire retour a la ligne title banniere

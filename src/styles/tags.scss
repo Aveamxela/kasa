@@ -1,0 +1,26 @@
+.tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+    .tag {
+        display: flex;
+        align-items: center;
+        background-color: $color-1;
+        border-radius: 5px;
+        height: 18px;
+        color: white;
+        padding: 2px 22px 2px 22px;
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .tags {
+        .tag {
+            border-radius: 10px;
+            height: 25px;
+            font-size: 14px;
+        }
+    }
+}

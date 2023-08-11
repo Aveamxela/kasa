@@ -1,30 +1,21 @@
-import React from 'react';
-import {FaStar} from "react-icons/fa"
+import React from "react";
+import { FaStar } from "react-icons/fa";
 
+const Ratings = ({ rating, max }) => {
 
-
-// deux boucle : recuperer le nombre de rating
-// une pour etoile pleine: bouche pour chaque rating afficher : 
-// une pour les autre : longueur du tableau - rating afficher
-
-const Ratings = ({ rating }) => {
-  const displayStars = () => {
-    const stars = [];
-    for (let i = 0; i < 5; i++) {
-      if (i < rating) {
-        stars.push(<FaStar key={i} size={18} />);
-      } else {
-        stars.push(<FaStar className="grey-star" key={i} size={18} />);
-      }
-    }
-    return stars;
-  };
-
-  return (
-    <div>
-      {displayStars()}
-    </div>
-  );
+    return (
+        <div className="ratings">
+            {/*Création d'un tableau en fonction de la valeur max (par défault = 5)*/}
+            {[...Array(max ?? 5)].map((valeurCourante, i) => {
+                //Afficher une étoile si i est inférieur à la
+                if (i < rating) {
+                    return <FaStar className="rating" key={i} size={18} />;
+                } else {
+                    return <FaStar className="rating grey-star" key={i} size={18} />;
+                }
+            })}
+        </div>
+    );
 };
 
 export default Ratings;
