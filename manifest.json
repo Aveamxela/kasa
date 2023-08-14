@@ -1,0 +1,15 @@
+{
+  "name": "Kasa",
+  "description": "Site internet qui permet la location d'appartements entre particuliers en France.",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "145x46"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
