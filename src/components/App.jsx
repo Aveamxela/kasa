@@ -6,7 +6,7 @@ import Error from "../pages/Error";
 
 function App() {
     return (
-        <BrowserRouter basename={'/kasa'}>
+        <BrowserRouter basename={'/kasa/'}>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
