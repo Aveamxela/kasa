@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import Ratings from "../components/Ratings"
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
+import Error from "./Error";
 
 const Product = () => {
 
@@ -15,7 +16,10 @@ const Product = () => {
 
     // Récupère le produit avec le bon id dans la liste des produits
     const product = Products.find((product) => product.id === id);
-
+    // Si identifiant introuvable alors afficher la page d'erreur
+    if (!product) {
+        return <Error/>
+    }
     return (
         <div>
             <Navigation />

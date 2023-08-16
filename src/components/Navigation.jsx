@@ -26,4 +26,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-//Ajouter logo

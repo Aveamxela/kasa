@@ -23,7 +23,6 @@
             }
         }
     }
-
     .content-collapse {
         background-color: #f6f6f6;
         padding: 30px 20px 20px 20px;
@@ -36,12 +35,10 @@
         }
     }
 }
-
 @keyframes openCollapse {
     from {
         top: -200px;
     }
-
     to {
         top: 0px;
     }
