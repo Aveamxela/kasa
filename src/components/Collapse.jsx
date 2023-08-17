@@ -17,7 +17,7 @@ const Collapse = (props) => {
                 <img
                     className={`icon-collapse ${isOpen ? "open" : ""}`}
                     src={ArrowUp}
-                    alt=""
+                    alt="flèche pour ouvrir et fermer le contenu"
                 />
             </button>
 

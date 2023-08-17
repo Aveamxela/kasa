@@ -36,7 +36,7 @@ const Product = () => {
                             <img
                                 className="img-host"
                                 src={product.host.picture}
-                                alt=""
+                                alt="photo de l'hôte"
                             />
                         </div>
                     </div>

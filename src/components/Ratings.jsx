@@ -7,7 +7,7 @@ const Ratings = ({ rating, max }) => {
         <div className="ratings">
             {/*Création d'un tableau en fonction de la valeur max (par défault = 5)*/}
             {[...Array(max ?? 5)].map((valeurCourante, i) => {
-                //Afficher une étoile si i est inférieur à la
+                //Afficher une étoile colorée si i est inférieur au rating contenu dans le fichier json
                 if (i < rating) {
                     return <FaStar className="rating" key={i} size={18} />;
                 } else {

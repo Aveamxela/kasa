@@ -41,13 +41,13 @@ const CarouselProduct = (props) => {
                         onClick={previous}
                         src={previousImage}
                         className="previous-arrow"
-                        alt=""
+                        alt="flèche retour"
                     />
                     <img
                         onClick={next}
                         src={nextImage}
                         className="next-arrow"
-                        alt=""
+                        alt="flèche suivante"
                     />
                 </div>
             )}
