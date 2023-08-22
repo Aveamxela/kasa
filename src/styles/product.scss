@@ -66,12 +66,12 @@
                 }
             }
         }
-        .describe-equipment {
-            grid-area: 4/1/5/3;
+    }
+    .describe-equipment {
             display: flex;
+            gap:6%;
             width: 100%;
         }
-    }
 }
 
 @media only screen and (min-width: 1024px) {
